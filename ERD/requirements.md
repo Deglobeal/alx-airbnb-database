@@ -1,9 +1,3 @@
-# Entity-Relationship Diagram: AirBnB Clone
-
-## 📁 File Location
-- ER Diagram File: `ERD.drawio` or `ERD.png`
-- Directory: `alx-airbnb-database/ERD/`
-
 ## 📊 Entities and Attributes
 
 ### User
