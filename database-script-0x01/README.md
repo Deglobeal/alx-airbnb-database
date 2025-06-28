@@ -1,10 +1,10 @@
 # Airbnb Database Schema – SQL DDL
 
-## 📁 File: schema.sql
+##  File: schema.sql
 
 This file contains SQL `CREATE TABLE` statements to define the database schema for an Airbnb-like application.
 
-## 📦 Entities and Tables
+##  Entities and Tables
 
 - **users**: Stores guest, host, and admin data
 - **properties**: Stores listings posted by hosts
@@ -13,14 +13,14 @@ This file contains SQL `CREATE TABLE` statements to define the database schema f
 - **reviews**: User-generated reviews on properties
 - **messages**: Direct messages between users
 
-## 🔐 Constraints & Integrity
+##  Constraints & Integrity
 
 - All primary keys are UUIDs
 - Foreign key constraints ensure relational integrity
 - ENUM-like validation through `CHECK` constraints
 - Timestamps with default values
 
-## ⚡ Indexes
+##  Indexes
 
 - Indexed columns for search performance:
   - `users.email`
@@ -29,7 +29,7 @@ This file contains SQL `CREATE TABLE` statements to define the database schema f
   - `reviews.property_id`
   - `messages.sender_id`, `messages.recipient_id`
 
-## ✅ Requirements Met
+##  Requirements Met
 
 - Proper data types and nullability
 - Foreign keys and primary keys
