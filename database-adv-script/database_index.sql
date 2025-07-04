@@ -15,3 +15,10 @@ CREATE INDEX idx_reviews_property_id ON reviews(property_id);
 
 -- Index for sorting properties by name
 CREATE INDEX idx_properties_name ON properties(name);
+
+
+EXPLAIN ANALYZE
+SELECT *
+FROM bookings
+WHERE user_id = 101
+ORDER BY start_date DESC;
