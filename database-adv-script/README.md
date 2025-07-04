@@ -33,3 +33,27 @@ WHERE (
     FROM reviews r
     WHERE r.property_id = p.id
 ) > 4.0;
+
+
+
+# Aggregations and Window Functions – ALX Airbnb Clone
+
+This task demonstrates the use of SQL aggregation and window functions to analyze booking data.
+
+---
+
+## ✅ Queries
+
+### 1. Total Number of Bookings Per User (Aggregation)
+
+This query counts the total number of bookings each user has made.
+
+```sql
+SELECT 
+    users.id AS user_id,
+    users.name AS user_name,
+    COUNT(bookings.id) AS total_bookings
+FROM users
+LEFT JOIN bookings ON users.id = bookings.user_id
+GROUP BY users.id, users.name
+ORDER BY total_bookings DESC;
